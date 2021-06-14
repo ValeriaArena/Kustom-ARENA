@@ -1,0 +1,15 @@
+/*Lo aplique en el botón de pedido de la seccion Menú*/
+
+@import "variables.scss";
+
+$botones: ( /*Declaramos nuestro mapa*/
+        pedido: $color-rojo,
+        whatsapp:  #11852a,
+        send-mail: $color-azul
+); 
+
+@each $red, $color in $botones {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}

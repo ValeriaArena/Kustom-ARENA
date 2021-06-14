@@ -1,0 +1,7 @@
+@import "variables.scss";
+
+/* lo aplique en seccion información */
+@for $i from 1 through 4 {
+    .caja-#{$i} { background-color: $color-gris; }
+  }
+  

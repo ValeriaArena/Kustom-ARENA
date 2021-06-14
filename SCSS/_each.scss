@@ -1,0 +1,8 @@
+
+
+@each $index in Nosotros, menu, contacto {
+    .#{$index}-box { 
+          Background-image:  
+           url('IMG/#{$index}.JPG');
+     }
+}

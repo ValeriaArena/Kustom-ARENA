@@ -1,0 +1,47 @@
+
+.titulo__section {
+    background-color: #212E53;
+    text-decoration-color: white;
+}
+
+.titulo__section--gradiente {
+    background-image: linear-gradient(to right , #202731, #212E53);
+}
+
+.titulo__section--transformacion {
+    font-size: 30px;
+    transition: ALL 1s;
+ }
+ .titulo__section--transformacion:hover {
+    font-size: 45px;
+    background-color: #BB2020;
+    color: #FAF8EB;
+ }
+
+ footer {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    grid-area: footer;
+ }
+
+ .Footer--gradiente {
+    background-image: linear-gradient(to top , #7F7F7F, #BB2020);
+}
+
+
+.nav__Inicio {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+.nav__menú {
+    background-color: #BB2020;
+    color: white
+}
+.nav__subMenu {
+    background-color: #BB2020;
+    
+}

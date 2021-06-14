@@ -1,0 +1,319 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+/* html { etiqueta raíz
+    font-size: 62.5%;
+} */
+
+body { 
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color:white;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 15px;
+    padding: 15px;
+    text-transform: uppercase;
+    /* no me funcionan */
+    position: sticky;
+    white-space: pre;
+    animation-duration: 10s;
+    animation-name: animate__swing;
+}
+
+
+h2 {
+    color:#212E53;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 15px;
+    padding: 15px;
+    text-transform: uppercase;   
+}
+
+h3 {
+    color:#212E53 ;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+p {
+    color:#3D3D3D;
+    word-spacing: 2px;
+    line-height: 1.2;
+    margin: 15px;
+    padding: 5px;
+}
+header {
+    background-color: #BB2020;
+    top:0px;
+    display: block;
+    text-align: center;
+    position: sticky;
+    z-index: 1;
+    flex-wrap: wrap;
+    grid-area: header;
+
+}
+.imgInicioLogo {
+    margin: 160px 600px 0px 600px;
+}
+footer {
+    background-color: #BB2020;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    grid-area: footer;
+}
+form {
+    margin: 5PX;
+    padding: 40PX;
+}
+.bordeRedondeado {
+    border-radius: 40px;
+}
+.imgChica {
+    width: 30%;
+    padding: 15px;
+}
+ul {
+   list-style-type: none;
+   font-size:0 /* truco por el uso de inline-block*/
+}
+li {
+   display: inline-block;
+   text-transform: uppercase;
+   
+   position:relative;
+   font-size: 22px;
+   padding: 10px;
+}
+ul ul {
+   position: absolute;
+   display: none;
+}
+ ul ul li {
+   display: block;
+}
+ul li:hover ul {
+   display:block;
+}
+nav ul li a {
+    color: blanchedalmond; 
+    text-decoration: none;
+    font-weight: 500;     
+}
+.navInicio {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+.menuNav {
+    background-color: #BB2020;
+    color: white
+}
+.subMenu {
+    background-color: #BB2020;
+    
+}
+.divTitulos {
+    border: #BB2020 2px solid;
+    margin: 5px;
+    padding: 5px 15px 5px 15px;
+    width: 400px;
+    text-align: center;
+}
+.mayuscula {
+    text-transform: uppercase;
+}
+.formu {
+    background-color: white;
+    border-color: #111A23;
+    border-radius: 10px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    font-size: 15px;
+    min-height: 40px;
+    padding: 5px 14px;
+    margin-bottom: 20px;  
+    color: #111A23;  
+}
+.formu2 {
+    width: 70%;
+}
+.botonesFormu {
+    padding: 15px    
+}
+.Contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.div1 {
+    display:inline-block;
+    padding: 60px;
+    margin: 5px;
+    background-color: #FAF8EB;
+}
+
+.div3 {
+    display:inline-block;
+    padding: 30px;
+    margin: 5px;
+    background-color: #FAF8EB;
+ 
+}
+.center {
+    text-align: center;
+}
+.Contenedor2 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    flex-basis: 100px;
+    justify-content: center;
+}
+.div2 {
+    display:inline-block;   
+    padding: 0px;
+    margin: 0px;
+} 
+.contenedorAzul {
+    background-color: #556779;
+    margin: 20px;
+    padding: 15px 35px;
+}
+
+.gradiente {
+    background-image: linear-gradient(to top, #202731 , #FAF8EB);
+}
+
+.gradienteTitulo {
+    background-image: linear-gradient(to right , #202731, #212E53);
+}
+
+.gradienteFooter {
+    background-image: linear-gradient(to top , #7F7F7F, #BB2020);
+}
+
+.h2Transformacion{
+    font-size: 30px;
+    transition: ALL 1s;
+ }
+.h2Transformacion:hover {
+    background-color: #BB2020;
+    color: #FAF8EB;
+ }
+
+ .h1Transformacion{
+    font-size: 36px;
+    transition: ALL 1s;
+ }
+.h1Transformacion:hover {
+    color: #BB2020;
+ }
+
+ #grilla {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "titulo informacion "
+      "footer footer";
+    grid-template-rows: 10% auto 10%; 
+    grid-template-columns: 10% auto;
+}
+
+section#titulo {
+    grid-area: titulo; 
+    background-color: #212E53;
+    text-decoration-color: white;
+}
+ section#informacion {
+    grid-area: informacion;       
+}
+section#formulario {
+    grid-area: formulario;       
+}
+
+section#foto {
+    grid-area: foto;       
+}
+ #grillaNosotros { 
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "titulo informacion"
+      "titulo informacion "
+      "footer footer";
+    grid-template-rows: 5% auto auto 10%; 
+    grid-template-columns: 10% auto;
+}
+
+
+ #grillaMenu {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "titulo informacion "
+      "footer footer";
+    grid-template-rows: auto auto 3%; 
+    grid-template-columns: 20% auto;
+}
+
+@media only screen and (min-width: 1024px) {
+	#grillaMenu {
+        grid-template-areas:
+        "header header"
+        "titulo informacion "
+        "footer footer";
+        grid-template-rows: 5% auto 5%;
+        grid-template-columns:10% auto ;
+        }
+}
+
+
+ #grillaContacto { /* mobile first*/
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "titulo informacion"
+      "formulario formulario"
+      "footer footer ";
+    grid-template-rows: auto auto auto 10%; 
+    grid-template-columns: 20% auto;
+}
+   
+
+@media only screen and (min-width: 1024px) {
+	#grillaContacto {
+        grid-template-areas:
+        "header header header"
+        "titulo informacion formulario"
+        "footer footer footer";
+        grid-template-rows: 8% auto 10%;
+        grid-template-columns:10% auto auto ;
+        }
+}
+
+.color {
+    color:whitesmoke;
+    background-color:#BB2020;
+    font-size: medium;
+}
+
